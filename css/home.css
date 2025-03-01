@@ -1,0 +1,140 @@
+/*Base-------------------------------------------------------------------------------*/
+@charset "utf-8";
+
+body {
+	font-family: Arial, Helvetica, "儷黑 Pro", "微軟正黑體", "新細明體", sans-serif;
+	background-color: #f5f5f5;
+	/* background-image: url('../../picture.jpg'); */
+	background-size: cover;
+	 background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+.container {
+	/*border: 2px solid #E4745E;*/
+/*	width: 1150px;*/
+	/*height: 500px;*/
+	/*padding: 15px;*/
+/*	display: flex;*/
+/*	text-align: center;*/
+}
+
+/*.content {
+	display: flex;
+	background-color: #fff;
+	border-radius: 30px;
+	box-shadow: 0 8px 10px 0 rgba(50,50,93,0.11), 0 3px 6px 0 rgba(0,0,0,.08);
+}
+*/
+.is-cursor-pointer {
+    cursor: pointer !important;
+}
+
+.transform {
+    -webkit-transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+    transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+}
+
+.is-duration-300 {
+    transition-duration: 0.3s;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+.hover-translate-y:hover {
+  -webkit-transform: translateX(0) translateY(-0.25rem) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important;
+  transform: translateX(0) translateY(-0.25rem) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1) !important;
+}
+
+.hover-shadow-xl:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0.7;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar customization */
+.hero-head {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;  /* Ensure shadow appears above content */
+}
+
+/* Optional: Add transition for smoother scroll effects */
+.hero-head {
+    transition: box-shadow 0.3s ease;
+}
+
+/* Contact modal styling */
+.modal-card {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.contact-item .icon {
+    color: #EFD3AC;
+    width: 24px;
+}
+
+.contact-item:hover {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+/* Hero background image styling */
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;  /* Adjust transparency */
+}
+
+/* Ensure content appears above background */
+.hero-head {
+    position: relative;
+    z-index: 2;
+}
+
+.container.is-flex {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-foot {
+    position: relative;
+    z-index: 2;
+}

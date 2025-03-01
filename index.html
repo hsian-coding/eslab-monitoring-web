@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ESLab</title>
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<script src="https://kit.fontawesome.com/4db4c5e409.js" crossorigin="anonymous"></script>
+	<script src="js/main.js" defer></script>
+</head>
+
+<body >
+<section class="hero is-fullheight">
+	<!-- Hero head: will stick at the top -->
+	<div class="hero-head" style="background-color: #EFD3AC;">
+	<header class="navbar">
+	  <div class="container">
+	    <div class="navbar-brand is-size-3">
+	    	<a href="index.html">
+		    	<div class="navbar-item">
+			      	<!-- <i class="fa-solid fa-earth-asia fa-spin fas fa-xl" style="color: #8E9BAE;"></i> -->
+			      	<i class="fa-solid fa-earth-asia fa-bounce fas fa-xl" style="color: #fffaf4;"></i>
+			      	<p style="color: #FFFFFF;">&nbsp;<b>ESLab Mornitoring System</b></p>	      	
+			        <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
+		        </div>
+	    	</a>
+	      <span class="navbar-burger" data-target="navbarMenuHeroC">
+	        <span></span>
+	        <span></span>
+	        <span></span>
+	      </span>
+	    </div>
+	    <div id="navbarMenuHeroC" class="navbar-menu has-text-light">
+	      <div class="navbar-end">
+<!-- 	        <a class="navbar-item is-active">
+	          Contact
+	        </a> -->
+	        
+	        <span class="navbar-item">
+	          <a class="button has-text-info-dark is-inverted" id="contactButton" style="border-radius: 20px;">
+	            <span class="icon">
+	              <i class="fab fa-github"></i>
+	            </span>
+	            <span>Contact Us</span>
+	          </a>
+	        </span>
+	      </div>
+	    </div>
+	  </div>
+	</header>
+	</div>
+
+	<!-- Add background image section -->
+	<div class="hero-background">
+		<img src="assets/images/index_background.jpg" alt="Background">
+	</div>
+
+	<!-- Hero content: will be in the middle -->
+	<!-- <div class="hero-body "> -->
+		<div class="container is-flex has-text-centered">
+			<div class="columns is-vcentered">
+				<div class="column">
+					<a href="lantai.html">
+						<div class="card is-cursor-pointer transform is-duration-300 hover-shadow-xl hover-translate-y" style="border-radius: 20px 20px 20px 20px;">
+							<div class="card-content">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="assets/images/lantai_map2.png" alt="Lantai Seismic Network">
+									</figure>
+								</div>
+								<hr>
+								<p class="title is-size-4-desktop">Lantai Seismic Network</p>
+							</div>
+							<!-- 					  <footer class="card-footer">
+							<p class="card-footer-item has-text-weight-semibold">
+							<span>
+							<b>Lantai Seismic Network</b>
+							</span>
+							</p>
+							</footer> -->
+						</div>
+					</a>
+				</div>
+				<div class="column">
+					<a href="javascript:;">
+						<div class="card is-cursor-pointer transform is-duration-300 hover-shadow-xl hover-translate-y" style="border-radius: 20px 20px 20px 20px;">
+							<div class="card-content">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="assets/images/chulin_map.png" alt="Chulin Seismic Network">
+									</figure>
+								</div>
+								<hr>
+								<p class="title is-size-4-desktop">Chulin Seismic Network</p>
+							</div>
+							<!-- 					  <footer class="card-footer">
+							<p class="card-footer-item has-text-weight-semibold">
+							<span>
+							<b>Lantai Seismic Network</b>
+							</span>
+							</p>
+							</footer> -->
+						</div>
+					</a>
+				</div>
+				<div class="column">
+					<a href="javascript:;">
+						<div class="card is-cursor-pointer transform is-duration-300 hover-shadow-xl hover-translate-y" style="border-radius: 20px 20px 20px 20px;">
+							<div class="card-content">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="assets/images/lantai_map.png" alt="Taiwan DOP map">
+									</figure>
+								</div>
+								<hr>
+								<p class="title is-size-4-desktop"> Taiwan DOP map</p>
+							</div>
+							<!-- 					  <footer class="card-footer">
+							<p class="card-footer-item has-text-weight-semibold">
+							<span>
+							<b>Lantai Seismic Network</b>
+							</span>
+							</p>
+							</footer> -->
+						</div>
+					</a>
+				</div>
+				
+			</div>			
+					
+		</div>
+	<!-- </div> -->
+
+  <!-- Hero footer: will stick at the bottom -->
+  <div class="hero-foot has-text-centered">
+    <nav class="tabs is-boxed is-fullwidth">
+      <div class="container" style="border-top: 1px solid #EFD3AC;">
+        <ul>
+        	<!-- <hr> -->
+          <!-- <li class="is-active"><a>Overview</a></li> -->
+          <li>Copyright © 2023 Earth Structure Laboratory, Institute of Earth Sciences, Academia Sinica</li>
+ <!--          <li><a>Grid</a></li>
+          <li><a>Elements</a></li>
+          <li><a>Components</a></li>
+          <li><a>Layout</a></li> -->
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<!-- Add this modal structure at the end of the body, before closing </body> tag -->
+<div class="modal" id="contactModal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head" style="background-color: #EFD3AC;">
+            <p class="modal-card-title has-text-white">Contact Information</p>
+            <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <div class="content">
+                <div class="contact-item">
+                    <span class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>128 Academia Road, Section 2, Nankang, Taipei 115, Taiwan</span>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">
+                        <i class="fas fa-phone"></i>
+                    </span>
+                    <span>+886-2-2783-9910</span>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>contact@earth.sinica.edu.tw</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+</body>
+
+</html>

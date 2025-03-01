@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lantai Seismic Network</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="css/lantai.css">
+	<script src="https://kit.fontawesome.com/4db4c5e409.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+		crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+		crossorigin=""></script>
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<nav class="navbar" style="background-color: #EFD3AC;">
+		<div class="container is-relative">
+			<div class="navbar-brand is-size-3">
+				<a href="index.html">
+					<div class="navbar-item">
+						  <i class="fa-solid fa-earth-asia fa-bounce fas fa-xl" style="color: #fffaf4;"></i>
+						  <p style="color: #FFFFFF;">&nbsp;<b>Home</b></p>	      	
+					</div>
+				</a>
+			</div>
+			
+			<div class="navbar-title-container ">
+				<h1 class="title has-text-white mb-0 is-size-2">Lantai Seismic Network</h1>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Content -->
+	<div class="section">
+		<div class="container">
+			<div class="columns">
+				<!-- Map Column -->
+				<div class="column is-one-third">
+					<div class="map-container">
+						<div id="map"></div>
+					</div>
+				</div>
+				
+				<!-- Image Column -->
+				<div class="column is-two-thirds">
+					<div class="container-lantai">
+						<div class="content">
+							<!-- Add image switch button -->
+							<div class="image-switch">
+								<button class="button is-rounded" id="switchImageBtn">
+									<span class="icon">
+										<i class="fas fa-sync-alt"></i>
+									</span>
+								</button>
+							</div>
+							<img class="img-resp-lantai" src="assets/images/Lantai_stream.png" id="MAP" data-alt-image="assets/images/Lantai_stream_spectrogram.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/lantai.js"></script>
+</body>
+
+</html>
