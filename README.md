@@ -21,14 +21,14 @@ A web-based monitoring system for the Earth Structure Laboratory's seismic netwo
 
 ## Project Structure
 eslab-monitoring/  
-├── assets/  
-│ └── images/  
-├── css/  
-│ ├── home.css  
-│ ├── lantai.css  
-│ └── normalize.min.css  
-├── js/  
-│ ├── main.js  
-│ └── lantai.js  
-├── index.html  
+|── assets/  
+| └── images/  
+|── css/  
+| ├── home.css  
+| ├── lantai.css  
+| └── normalize.min.css  
+|── js/  
+| ├── main.js  
+| └── lantai.js  
+|── index.html  
 └── lantai.html
