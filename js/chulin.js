@@ -30,7 +30,7 @@ function updateImage() {
 // Add this after CONFIG definition
 async function loadStationData() {
     try {
-        const response = await fetch('data/lantai_station_information.json');
+        const response = await fetch('data/chulin_station_information.json');
         const data = await response.json();
         return data.stations;
     } catch (error) {
@@ -111,15 +111,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Image switch functionality
     const switchBtn = document.getElementById('switchImageBtn');
-    const icon = switchBtn.querySelector('.icon');
     const image = document.getElementById(CONFIG.imageId);
 
     switchBtn.addEventListener('click', () => {
-        // Add rotation animation to icon only
-        icon.style.transform = CONFIG.images.stream.current ? 'rotate(180deg)' : 'rotate(0deg)';
-        
-        // Update tooltip text
-        switchBtn.dataset.tooltip = CONFIG.images.stream.current ? 'Show Stream' : 'Show Spectrogram';
+        // Add rotation animation to button
+        switchBtn.style.transform = CONFIG.images.stream.current ? 'rotate(180deg)' : 'rotate(0deg)';
         
         // Toggle current state
         CONFIG.images.stream.current = !CONFIG.images.stream.current;

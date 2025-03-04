@@ -83,7 +83,7 @@ a {
 
 /* Contact modal styling */
 .modal-card {
-    max-width: 400px;
+    max-width: 800px;
     border-radius: 10px;
 }
 
@@ -120,7 +120,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.3;  /* Adjust transparency */
+    opacity: 0.5;  /* Adjust transparency */
 }
 
 /* Ensure content appears above background */
@@ -137,4 +137,48 @@ a {
 .hero-foot {
     position: relative;
     z-index: 2;
+}
+
+/* Contact info styling */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-line {
+    margin: 0;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.email-text {
+    color: #666;
+    font-size: 0.95em;
+}
+
+/* Instagram link styling */
+.contact-item a.icon-text {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-item a.icon-text:hover {
+    color: #E1306C;  /* Instagram brand color */
+}
+
+.contact-item a.icon-text .icon {
+    color: #EFD3AC;
+    transition: color 0.3s ease;
+}
+
+.contact-item a.icon-text:hover .icon {
+    color: #E1306C;
 }

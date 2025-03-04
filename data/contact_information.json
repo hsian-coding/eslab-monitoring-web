@@ -1,0 +1,21 @@
+{
+    "address": "128, Sec. 2, Academia Road, Nangang, Taipei 11529, Taiwan",
+    "phone": "+886-2-2783-9910",
+    "social": {
+        "instagram": "https://www.instagram.com/ies.eslab/"
+    },
+    "contacts": [
+        {
+            "name": "Hsin-Hua Huang",
+            "title": "IES",
+            "email": "hhhuang@earth.sinica.edu.tw",
+            "extension": "ext: 1504"
+        },
+        {
+            "name": "Hsi-An Chen",
+            "title": "IES",
+            "email": "hsianchen@earth.sinica.edu.tw",
+            "extension": "ext: 1508"
+        }
+    ]
+} 
