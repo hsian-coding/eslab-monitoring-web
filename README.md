@@ -19,8 +19,6 @@ A web-based monitoring system for the Earth Structure Laboratory's seismic netwo
 - [Leaflet Maps](https://leafletjs.com/)
 - Font Awesome Icons
 
-## Project Structure 
-=======
 ## Project Structure
 eslab-monitoring/  
 ├── assets/  
