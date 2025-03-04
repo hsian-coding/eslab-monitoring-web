@@ -19,4 +19,20 @@ A web-based monitoring system for the Earth Structure Laboratory's seismic netwo
 - [Leaflet Maps](https://leafletjs.com/)
 - Font Awesome Icons
 
+<<<<<<< HEAD
 ## Project Structure 
+=======
+## Project Structure
+eslab-monitoring/  
+|── assets/  
+| └── images/  
+|── css/  
+| ├── home.css  
+| ├── lantai.css  
+| └── normalize.min.css  
+|── js/  
+| ├── main.js  
+| └── lantai.js  
+|── index.html  
+└── lantai.html
+>>>>>>> 9f7bea6d5e8f53b95a591e0b21b177bd062eda2a
