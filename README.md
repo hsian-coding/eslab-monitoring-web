@@ -23,24 +23,24 @@ A web-based monitoring system for the Earth Structure Laboratory's seismic netwo
 =======
 ## Project Structure
 eslab-monitoring/ 
-├── assets/
-│   └── images/
-│       ├── Lantai_stream.png
-│       └── Lantai_stream_spectrogram.png
-├── css/
-│   ├── home.css
-│   ├── lantai.css
-│   └── normalize.min.css
-├── data/
-│   ├── contact_information.json
-│   └── lantai_station_information.json
-├── js/
-│   ├── main.js
-│   ├── lantai.js
-│   └── chulin.js
-├── index.html
-├── lantai.html
-├── chulin.html
-└── README.md
+├── assets/  
+│   └── images/  
+│       ├── Lantai_stream.png  
+│       └── Lantai_stream_spectrogram.png  
+├── css/  
+│   ├── home.css  
+│   ├── lantai.css  
+│   └── normalize.min.css  
+├── data/  
+│   ├── contact_information.json  
+│   └── lantai_station_information.json  
+├── js/  
+│   ├── main.js  
+│   ├── lantai.js  
+│   └── chulin.js  
+├── index.html  
+├── lantai.html  
+├── chulin.html  
+└── README.md  
 
 
