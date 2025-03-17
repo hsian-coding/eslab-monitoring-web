@@ -20,7 +20,8 @@ A web-based monitoring system for the Earth Structure Laboratory's seismic netwo
 - Font Awesome Icons
 
 ## Project Structure
-eslab-monitoring-web/  
+   ```bash
+/eslab-monitoring-web/  
 ├── .gitignore  
 ├── README.md  
 ├── index.html  
@@ -50,3 +51,4 @@ eslab-monitoring-web/
     ├── chulin.js  
     ├── lantai.js  
     └── main.js  
+   ```
