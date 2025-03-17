@@ -9,7 +9,7 @@ A web-based monitoring system for the Earth Structure Laboratory's seismic netwo
 - **Multiple Networks**: Support for different seismic networks:
   - Lantai Seismic Network
   - Chulin Seismic Network
-  - Taiwan DOP Map
+  - Taiwan Real-time Ambient Noise System (TRANS)
 
 ## Technologies Used
 
@@ -20,23 +20,33 @@ A web-based monitoring system for the Earth Structure Laboratory's seismic netwo
 - Font Awesome Icons
 
 ## Project Structure
-eslab-monitoring/  
-├── assets/  
-⎮   └── images/  
-⎮       ├── Lantai_stream.png  
-⎮       └── Lantai_stream_spectrogram.png  
-├── css/  
-⎮   ├── home.css  
-⎮   ├── lantai.css  
-⎮   └── normalize.min.css  
-├── data/  
-⎮   ├── contact_information.json  
-⎮   └── lantai_station_information.json  
-├── js/  
-⎮   ├── main.js  
-⎮   ├── lantai.js  
-⎮   └── chulin.js  
+eslab-monitoring-web/  
+├── .gitignore  
+├── README.md  
 ├── index.html  
 ├── lantai.html  
 ├── chulin.html  
-└── README.md  
+├── assets/  
+│   ├── contact_information.json  
+│   ├── chulin_station_information.json  
+│   ├── lantai_station_information.json  
+│   └── images/  
+│       ├── Chulin_landscape.png  
+│       ├── DOP-E_icon_figure.png   
+│       ├── index_background.jpg  
+│       └── Lantai_landscape.png  
+├── css/  
+│   ├── all.css  
+│   ├── chulin.css  
+│   ├── home.css  
+│   ├── lantai.css  
+│   └── normalize.min.css  
+├── data/  
+│   ├── stations.json  
+│   ├── Chulin_stream.png  
+│   ├── Lantai_stream_spectrogram.png  
+│   └── Lantai_stream.png  
+└── js/  
+    ├── chulin.js  
+    ├── lantai.js  
+    └── main.js  
