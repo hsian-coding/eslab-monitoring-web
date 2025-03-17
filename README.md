@@ -1,6 +1,8 @@
 # ESLab Monitoring System
-> **A web-based monitoring system for the Earth Structure Laboratory's seismic networks. This project provides real-time visualization of seismic data from multiple monitoring stations.
 
+> ESLab Monitoring System: A web-based monitoring system for the Earth Structure Laboratory's seismic networks. This project provides real-time visualization of seismic data from multiple monitoring stations.
+
+---
 ## Features
 
 - **Real-time Data Updates**: Automatic updates of seismic waveforms and spectrograms
