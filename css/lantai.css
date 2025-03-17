@@ -126,7 +126,7 @@ body {
 
 /* Adjust content padding for better alignment */
 .section {
-    padding: 1.5rem;
+    padding: 0.5rem;
 }
 
 /* Column styles */
@@ -216,7 +216,7 @@ body {
     font-weight: bold;
 }
 
-.status-inactive {
+.status-warning {
     color: #ef4444;
     font-weight: bold;
 }
@@ -288,3 +288,13 @@ body {
     opacity: 1;
     visibility: visible;
 } 
+
+/* station tooltip */
+.station-tooltip {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+}

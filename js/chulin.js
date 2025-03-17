@@ -3,13 +3,13 @@ const CONFIG = {
     imageId: 'MAP',
     images: {
         stream: {
-            path: 'assets/images/Lantai_stream.png',
+            path: 'data/Chulin_stream.png',
             current: true
         },
-        spectrogram: {
-            path: 'assets/images/Lantai_stream_spectrogram.png',
-            current: false
-        }
+        // spectrogram: {
+        //     path: 'assets/images/Lantai_stream_spectrogram.png',
+        //     current: false
+        // }
     },
     updateInterval: 2000  // 2 seconds
 };
@@ -30,7 +30,7 @@ function updateImage() {
 // Add this after CONFIG definition
 async function loadStationData() {
     try {
-        const response = await fetch('data/chulin_station_information.json');
+        const response = await fetch('assets/chulin_station_information.json');
         const data = await response.json();
         return data.stations;
     } catch (error) {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     setInterval(updateImage, CONFIG.updateInterval);
 
     // Initialize Leaflet map
-    const map = L.map('map').setView([23.7, 121.2], 7); // Taiwan coordinates
+    const map = L.map('map').setView([23.11, 120.729], 14); // Taiwan coordinates
 
     // Define base layers
     const baseLayers = {
@@ -69,8 +69,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Load station data
     const stations = await loadStationData();
     
-    // Create markers using loaded data
-    const markers = L.layerGroup();
+    // // Create markers using loaded data
+    // const markers = L.layerGroup();
+    // // With MarkerClusterGroup:
+    // const markers = L.markerClusterGroup();    
+    // Initialize MarkerClusterGroup with custom cluster radius
+    const markers = L.markerClusterGroup({
+        maxClusterRadius: 10, // Adjust this value as needed
+        showCoverageOnHover: true, // Optional: shows cluster coverage area on hover
+        zoomToBoundsOnClick: true, // Optional: zooms to cluster bounds when clicked
+    });
     
     stations.forEach(station => {
         const popupContent = `
@@ -87,12 +95,31 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
         `;
 
+        // // Using DOMPurify to sanitize popup content
+        // const sanitizedPopupContent = DOMPurify.sanitize(popupContent);
+        // L.marker([station.coordinates.lat, station.coordinates.lon])
+        //     .bindPopup(sanitizedPopupContent, {
+        //         maxWidth: 300,
+        //         className: 'station-popup-container'
+        //     })
+        //     .addTo(markers);
+
+        // Using DOMPurify to sanitize popup content
+        const sanitizedPopupContent = DOMPurify.sanitize(popupContent); 
+            
+        // Create marker with tooltip (for hover) and popup (for click)
         L.marker([station.coordinates.lat, station.coordinates.lon])
-            .bindPopup(popupContent, {
+            .bindTooltip(station.id, {
+                permanent: false,
+                direction: 'top',
+                offset: L.point(0, -15),
+                className: 'station-tooltip'
+            })
+            .bindPopup(sanitizedPopupContent, {
                 maxWidth: 300,
                 className: 'station-popup-container'
             })
-            .addTo(markers);
+            .addTo(markers);         
     });
 
     // Define overlay layers
@@ -100,8 +127,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         'Stations': markers
     };
 
-    // Add markers to map
-    markers.addTo(map);
+    // // Add markers to map
+    // markers.addTo(map);
+    // Add MarkerClusterGroup to map
+    map.addLayer(markers);    
 
     // Add layer control to map
     L.control.layers(baseLayers, overlays, {

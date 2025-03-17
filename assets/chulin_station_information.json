@@ -1,0 +1,256 @@
+{
+    "network": "Chulin",
+"stations": [
+        {
+            "id": "CL03",
+            "coordinates": {
+                "lat": 23.10524,
+                "lon": 120.72264
+            },
+            "info": {
+                "location": "CL03",
+                "elevation": "711m",
+                "type": "GP",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL05",
+            "coordinates": {
+                "lat": 23.1012,
+                "lon": 120.72729
+            },
+            "info": {
+                "location": "CL05",
+                "elevation": "883m",
+                "type": "GP",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL06",
+            "coordinates": {
+                "lat": 23.10709,
+                "lon": 120.72886
+            },
+            "info": {
+                "location": "CL06",
+                "elevation": "851m",
+                "type": "GP",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL07",
+            "coordinates": {
+                "lat": 23.110732,
+                "lon": 120.733846
+            },
+            "info": {
+                "location": "CL07",
+                "elevation": "844m",
+                "type": "GP",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL09",
+            "coordinates": {
+                "lat": 23.10339,
+                "lon": 120.71562
+            },
+            "info": {
+                "location": "CL09",
+                "elevation": "546m",
+                "type": "GP",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL10",
+            "coordinates": {
+                "lat": 23.11124,
+                "lon": 120.71869
+            },
+            "info": {
+                "location": "CL10",
+                "elevation": "518m",
+                "type": "GP",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL11",
+            "coordinates": {
+                "lat": 23.103449,
+                "lon": 120.732492
+            },
+            "info": {
+                "location": "CL11",
+                "elevation": "1066m",
+                "type": "GP",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL12",
+            "coordinates": {
+                "lat": 23.11057,
+                "lon": 120.74151
+            },
+            "info": {
+                "location": "CL12",
+                "elevation": "1192m",
+                "type": "GP",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL13",
+            "coordinates": {
+                "lat": 23.11547,
+                "lon": 120.74347
+            },
+            "info": {
+                "location": "CL13",
+                "elevation": "1221m",
+                "type": "GP",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL14",
+            "coordinates": {
+                "lat": 23.107833,
+                "lon": 120.740008
+            },
+            "info": {
+                "location": "CL14",
+                "elevation": "1219m",
+                "type": "BB",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL15",
+            "coordinates": {
+                "lat": 23.107833,
+                "lon": 120.740008
+            },
+            "info": {
+                "location": "CL15",
+                "elevation": "1219m",
+                "type": "GP",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL16",
+            "coordinates": {
+                "lat": 23.10524,
+                "lon": 120.72264
+            },
+            "info": {
+                "location": "CL16",
+                "elevation": "711m",
+                "type": "BB",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL17",
+            "coordinates": {
+                "lat": 23.1066,
+                "lon": 120.71802
+            },
+            "info": {
+                "location": "CL17",
+                "elevation": "527m",
+                "type": "GP",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL18",
+            "coordinates": {
+                "lat": 23.11802,
+                "lon": 120.73743
+            },
+            "info": {
+                "location": "CL18",
+                "elevation": "1179m",
+                "type": "BB",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL19",
+            "coordinates": {
+                "lat": 23.10895,
+                "lon": 120.725508
+            },
+            "info": {
+                "location": "CL19",
+                "elevation": "654m",
+                "type": "GP",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL20",
+            "coordinates": {
+                "lat": 23.11732,
+                "lon": 120.72337
+            },
+            "info": {
+                "location": "CL20",
+                "elevation": "692m",
+                "type": "BB",
+                "status": "Withdraw",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "CL21",
+            "coordinates": {
+                "lat": 23.11274,
+                "lon": 120.72791
+            },
+            "info": {
+                "location": "CL21",
+                "elevation": "643m",
+                "type": "GP",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        }
+    ],
+    "metadata": {
+        "networkCode": "CL",
+        "region": "Chulin Mountain Range",
+        "totalStations": 17,
+        "activeStations": 16,
+        "networkStartDate": "2022-03-15",
+        "lastUpdate": "2023-12-01",
+        "contactInfo": {
+            "organization": "Earth Structure Laboratory",
+            "email": "hsianchen@earth.sinica.edu.tw",
+            "phone": "+886-2-2783-9910"
+        }
+    }
+} 

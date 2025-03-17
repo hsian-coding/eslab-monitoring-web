@@ -3,11 +3,11 @@ const CONFIG = {
     imageId: 'MAP',
     images: {
         stream: {
-            path: 'assets/images/Lantai_stream.png',
+            path: 'data/Lantai_stream.png',
             current: true
         },
         spectrogram: {
-            path: 'assets/images/Lantai_stream_spectrogram.png',
+            path: 'data/Lantai_stream_spectrogram.png',
             current: false
         }
     },
@@ -30,7 +30,7 @@ function updateImage() {
 // Add this after CONFIG definition
 async function loadStationData() {
     try {
-        const response = await fetch('data/lantai_station_information.json');
+        const response = await fetch('assets/lantai_station_information.json');
         const data = await response.json();
         return data.stations;
     } catch (error) {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     setInterval(updateImage, CONFIG.updateInterval);
 
     // Initialize Leaflet map
-    const map = L.map('map').setView([23.7, 121.2], 7); // Taiwan coordinates
+    const map = L.map('map').setView([24.531, 121.521], 16); // Taiwan coordinates
 
     // Define base layers
     const baseLayers = {
@@ -87,12 +87,31 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
         `;
 
+        // // Using DOMPurify to sanitize popup content
+        // const sanitizedPopupContent = DOMPurify.sanitize(popupContent);
+        // L.marker([station.coordinates.lat, station.coordinates.lon])
+        //     .bindPopup(sanitizedPopupContent, {
+        //         maxWidth: 300,
+        //         className: 'station-popup-container'
+        //     })
+        //     .addTo(markers);
+
+        // Using DOMPurify to sanitize popup content
+        const sanitizedPopupContent = DOMPurify.sanitize(popupContent); 
+            
+        // Create marker with tooltip (for hover) and popup (for click)
         L.marker([station.coordinates.lat, station.coordinates.lon])
-            .bindPopup(popupContent, {
+            .bindTooltip(station.id, {
+                permanent: false,
+                direction: 'top',
+                offset: L.point(0, -15),
+                className: 'station-tooltip'
+            })
+            .bindPopup(sanitizedPopupContent, {
                 maxWidth: 300,
                 className: 'station-popup-container'
             })
-            .addTo(markers);
+            .addTo(markers);             
     });
 
     // Define overlay layers

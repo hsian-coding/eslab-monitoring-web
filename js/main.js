@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Load contact information
     async function loadContactInfo() {
         try {
-            const response = await fetch('data/contact_information.json');
+            const response = await fetch('assets/contact_information.json');
             const data = await response.json();
             return data;
         } catch (error) {

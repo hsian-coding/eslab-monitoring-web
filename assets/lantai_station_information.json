@@ -1,0 +1,144 @@
+{
+    "network": "Lantai",
+"stations": [
+        {
+            "id": "LT01",
+            "coordinates": {
+                "lat": 24.531691,
+                "lon": 121.524201
+            },
+            "info": {
+                "location": "LT01",
+                "elevation": "1091m",
+                "type": "Broadband",
+                "status": "Active",                
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "LT03",
+            "coordinates": {
+                "lat": 24.531611,
+                "lon": 121.523254
+            },
+            "info": {
+                "location": "LT03",
+                "elevation": "1125m",
+                "type": "Broadband",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "LT04",
+            "coordinates": {
+                "lat": 24.532339,
+                "lon": 121.522232
+            },
+            "info": {
+                "location": "LT04",
+                "elevation": "1193m",
+                "type": "Broadband",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "LT05",
+            "coordinates": {
+                "lat": 24.531849,
+                "lon": 121.521271
+            },
+            "info": {
+                "location": "LT05",
+                "elevation": "1206m",
+                "type": "Broadband",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "LT06",
+            "coordinates": {
+                "lat": 24.530479,
+                "lon": 121.520592
+            },
+            "info": {
+                "location": "LT06",
+                "elevation": "1264m",
+                "type": "Broadband",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "LT07",
+            "coordinates": {
+                "lat": 24.530035,
+                "lon": 121.521210
+            },
+            "info": {
+                "location": "LT07",
+                "elevation": "1192m",
+                "type": "Broadband",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "LT08",
+            "coordinates": {
+                "lat": 24.529413,
+                "lon": 121.522392
+            },
+            "info": {
+                "location": "LT08",
+                "elevation": "1204m",
+                "type": "Broadband",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "LT09",
+            "coordinates": {
+                "lat": 24.533830,
+                "lon": 121.520920
+            },
+            "info": {
+                "location": "LT09",
+                "elevation": "1191m",
+                "type": "Broadband",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        },
+        {
+            "id": "LT10",
+            "coordinates": {
+                "lat": 24.531040,
+                "lon": 121.519030
+            },
+            "info": {
+                "location": "LT10",
+                "elevation": "1169m",
+                "type": "Broadband",
+                "status": "Active",
+                "samplingRate": "100Hz"
+            }
+        }
+    ],
+    "metadata": {
+        "networkCode": "LT",
+        "region": "Lantai Mountain Range",
+        "totalStations": 9,
+        "activeStations": 9,
+        "networkStartDate": "2022-03-15",
+        "lastUpdate": "2023-12-01",
+        "contactInfo": {
+            "organization": "Earth Structure Laboratory",
+            "email": "hsianchen@earth.sinica.edu.tw",
+            "phone": "+886-2-2783-9910"
+        }
+    }
+} 
