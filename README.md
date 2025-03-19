@@ -1,6 +1,6 @@
 ## ESLab Monitoring System
 
-> ESLab Monitoring System: A web-based monitoring system for the Earth Structure Laboratory's seismic networks. This project provides real-time visualization of seismic data from multiple monitoring stations.
+> The ESLab Monitoring System is a web-based application developed for the Earth Structure Laboratory's seismic networks. Its primary function is to provide real-time visualization of seismic data obtained from multiple monitoring stations. The system employs a figure refreshing mechanism, occurring every 2 seconds, to create a streaming data effect. These figures are generated externally using a separate Python program.
 
 ---
 ## Features
